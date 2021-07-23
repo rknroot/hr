@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "creation": "2013-02-22 01:27:45",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "school_univ",
+  "qualification",
+  "column_break_3",
+  "maj_opt_subj",
+  "year_of_passing",
+  "level",
+  "class_per"
+ ],
+ "fields": [
+  {
+   "fieldname": "school_univ",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Institution/University",
+   "oldfieldname": "school_univ",
+   "oldfieldtype": "Small Text"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Qualification",
+   "oldfieldname": "qualification",
+   "oldfieldtype": "Data",
+   "options": "\nLess than 10th\n10\n10+2\nGraduation (Arts/Science)\nPost graduation (Arts/Science)\nGraduate (Engineering)\nPost Graduate (Engineering)\nMBA/PGDBM\nMphil\nPhD\nDiploma\nITI\nOthers",
+   "print_width": "100px",
+   "width": "100px"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Level",
+   "oldfieldname": "level",
+   "oldfieldtype": "Select",
+   "options": "Graduate\nPost Graduate\nUnder Graduate"
+  },
+  {
+   "fieldname": "year_of_passing",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Year of Passing",
+   "oldfieldname": "year_of_passing",
+   "oldfieldtype": "Int",
+   "options": "Year"
+  },
+  {
+   "fieldname": "class_per",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Class / Percentage",
+   "oldfieldname": "class_per",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "maj_opt_subj",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specialisation/Major",
+   "oldfieldname": "maj_opt_subj",
+   "oldfieldtype": "Text"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "idx": 1,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-20 11:02:27.876878",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Education",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

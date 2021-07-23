@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "creation": "2013-02-22 01:27:45",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "address",
+  "last_ctc",
+  "total_experience",
+  "column_break_2",
+  "designation",
+  "contact",
+  "reason_for_leaving"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Name",
+   "oldfieldname": "company_name",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation",
+   "oldfieldname": "designation",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From MM/YY",
+   "oldfieldname": "address",
+   "oldfieldtype": "Small Text"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To MM/YY",
+   "oldfieldname": "contact",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "total_experience",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Experience",
+   "oldfieldname": "total_experience",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "last_ctc",
+   "fieldtype": "Data",
+   "label": "Last CTC"
+  },
+  {
+   "fieldname": "reason_for_leaving",
+   "fieldtype": "Data",
+   "label": "Reason For Leaving"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "idx": 1,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-06-15 16:46:07.578485",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee External Work History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

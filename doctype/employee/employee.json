@@ -1,0 +1,1149 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2013-03-07 09:04:18",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information",
+  "company",
+  "status",
+  "salutation",
+  "employee",
+  "first_name",
+  "last_name",
+  "date_of_birth",
+  "column_break_10",
+  "naming_series",
+  "date_of_joining",
+  "employee_name",
+  "middle_name",
+  "gender",
+  "age",
+  "employment_type",
+  "image",
+  "employee_number",
+  "emergency_contact_details",
+  "relation",
+  "column_break_19",
+  "erpnext_user",
+  "user_id",
+  "create_user",
+  "create_user_permission",
+  "employment_details",
+  "job_applicant",
+  "scheduled_confirmation_date",
+  "designation",
+  "branch",
+  "reports_to",
+  "final_confirmation_date",
+  "new_conformation_date",
+  "conformed_date",
+  "contract_end_date",
+  "office_mobile",
+  "col_break_22",
+  "department",
+  "grade",
+  "notice_number_of_days",
+  "revised_confirmation_date",
+  "date_of_retirement",
+  "it_asset_number",
+  "office_email",
+  "approvers_section",
+  "leave_approver",
+  "shift_request_approver",
+  "column_break_31",
+  "expense_approver",
+  "job_profile",
+  "column_break_45",
+  "attendance_and_leave_details",
+  "attendance_device_id",
+  "default_shift",
+  "column_break_44",
+  "holiday_list",
+  "salary_information",
+  "salary_mode",
+  "bank_name",
+  "bank_ac_no",
+  "pan_number",
+  "column_break_52",
+  "uan_number",
+  "esci_number",
+  "payroll_cost_center",
+  "health_insurance_section",
+  "health_insurer",
+  "from_mmyy",
+  "passport_number",
+  "date_of_issue",
+  "travel_insurer",
+  "from_mm_yy",
+  "column_break_76",
+  "health_insurance_no",
+  "to_mmyy",
+  "place_of_issue",
+  "valid_upto_mm_yy",
+  "travel_insurance_number",
+  "to_yy",
+  "health_insurance_provider",
+  "contact_details",
+  "cell_number",
+  "current_address",
+  "marital_status",
+  "height",
+  "blood_group",
+  "prefered_email",
+  "person_to_be_contacted",
+  "emergency_phone_number",
+  "column_break4",
+  "personal_email",
+  "permanent_address",
+  "aadhar_number",
+  "weight",
+  "medical_conditions",
+  "relationship",
+  "landline",
+  "permanent_accommodation_type",
+  "unsubscribed",
+  "prefered_contact_email",
+  "company_email",
+  "current_accommodation_type",
+  "sb53",
+  "bio",
+  "personal_details",
+  "valid_upto",
+  "health_details",
+  "column_break6",
+  "family_background",
+  "family_details_section",
+  "family_det",
+  "educational_qualification",
+  "education",
+  "previous_work_experience",
+  "external_work_history",
+  "sailing_experience_sec_section",
+  "sailing_experience",
+  "career_history_section",
+  "career_his",
+  "history_in_company",
+  "internal_work_history",
+  "exit",
+  "resignation_letter_date",
+  "last_working_day",
+  "notice_period_served",
+  "eligible_to_rehire",
+  "column_break_128",
+  "acceptance_date",
+  "exit_status",
+  "reason_for_voluntary_separation",
+  "reason_for_involuntary_separation",
+  "other",
+  "othr",
+  "reason",
+  "relieving_date",
+  "reason_for_leaving",
+  "leave_encashed",
+  "encashment_date",
+  "held_on",
+  "new_workplace",
+  "feedback",
+  "lft",
+  "rgt",
+  "old_parent"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_information",
+   "fieldtype": "Section Break",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee",
+   "no_copy": 1,
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Employee ID",
+   "no_copy": 1,
+   "oldfieldname": "naming_series",
+   "oldfieldtype": "Select",
+   "options": "HR-EMP-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Select",
+   "label": "Salutation",
+   "oldfieldname": "salutation",
+   "oldfieldtype": "Select",
+   "options": "\nMr\nMrs\nMs"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Display Name",
+   "oldfieldname": "employee_name",
+   "oldfieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "user_id.user_image",
+   "fetch_if_empty": 1,
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1,
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Employee Status",
+   "oldfieldname": "status",
+   "oldfieldtype": "Select",
+   "options": "Active\nLeft",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_number",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Employee Number",
+   "oldfieldname": "employee_number",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Employee Type",
+   "oldfieldname": "employment_type",
+   "oldfieldtype": "Link",
+   "options": "Employment Type"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "oldfieldname": "gender",
+   "oldfieldtype": "Select",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "oldfieldname": "date_of_birth",
+   "oldfieldtype": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining",
+   "oldfieldname": "date_of_joining",
+   "oldfieldtype": "Date",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "emergency_contact_details",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Emergency Contact"
+  },
+  {
+   "bold": 1,
+   "fieldname": "emergency_phone_number",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "options": "Phone"
+  },
+  {
+   "bold": 1,
+   "fieldname": "person_to_be_contacted",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Name"
+  },
+  {
+   "fieldname": "relation",
+   "fieldtype": "Data",
+   "label": "Relation"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "erpnext_user",
+   "fieldtype": "Section Break",
+   "label": "System User"
+  },
+  {
+   "description": "System User (login) ID. If set, it will become default for all HR forms.",
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "User ID",
+   "options": "User"
+  },
+  {
+   "depends_on": "eval:(!doc.user_id)",
+   "fieldname": "create_user",
+   "fieldtype": "Button",
+   "label": "Create User"
+  },
+  {
+   "default": "1",
+   "depends_on": "user_id",
+   "description": "This will restrict user access to other employee records",
+   "fieldname": "create_user_permission",
+   "fieldtype": "Check",
+   "label": "Create User Permission"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "collapsible": 1,
+   "fieldname": "employment_details",
+   "fieldtype": "Section Break",
+   "label": "Work Details"
+  },
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Job Applicant",
+   "options": "Job Applicant"
+  },
+  {
+   "fieldname": "scheduled_confirmation_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date Of Joining",
+   "oldfieldname": "scheduled_confirmation_date",
+   "oldfieldtype": "Date"
+  },
+  {
+   "fieldname": "final_confirmation_date",
+   "fieldtype": "Date",
+   "label": "Confirmation Date",
+   "oldfieldname": "final_confirmation_date",
+   "oldfieldtype": "Date"
+  },
+  {
+   "fieldname": "col_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.employment_type == \"Contract\" || doc.employment_type == \"Direct Contract\" || doc.employment_type == \"Third party contract\"",
+   "fieldname": "contract_end_date",
+   "fieldtype": "Date",
+   "label": "Contract End Date",
+   "oldfieldname": "contract_end_date",
+   "oldfieldtype": "Date"
+  },
+  {
+   "fieldname": "notice_number_of_days",
+   "fieldtype": "Int",
+   "label": "Notice Period",
+   "oldfieldname": "notice_number_of_days",
+   "oldfieldtype": "Int"
+  },
+  {
+   "fieldname": "date_of_retirement",
+   "fieldtype": "Date",
+   "label": "Retirement Date",
+   "oldfieldname": "date_of_retirement",
+   "oldfieldtype": "Date"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "job_profile",
+   "fieldtype": "Section Break",
+   "label": "Department and Grade"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Department",
+   "oldfieldname": "department",
+   "oldfieldtype": "Link",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Designation",
+   "oldfieldname": "designation",
+   "oldfieldtype": "Link",
+   "options": "Designation",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "reports_to",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Reporting Manager",
+   "oldfieldname": "reports_to",
+   "oldfieldtype": "Link",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Employee Grade"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch/Location",
+   "oldfieldname": "branch",
+   "oldfieldtype": "Link",
+   "options": "Branch"
+  },
+  {
+   "description": "Applicable Holiday List",
+   "fieldname": "holiday_list",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Holiday List",
+   "oldfieldname": "holiday_list",
+   "oldfieldtype": "Link",
+   "options": "Holiday List"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "salary_information",
+   "fieldtype": "Section Break",
+   "label": "Salary Details",
+   "oldfieldtype": "Section Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "salary_mode",
+   "fieldtype": "Select",
+   "label": "Salary Mode",
+   "oldfieldname": "salary_mode",
+   "oldfieldtype": "Select",
+   "options": "\nBank\nCash\nCheque"
+  },
+  {
+   "depends_on": "eval:doc.salary_mode == 'Bank'",
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name",
+   "oldfieldname": "bank_name",
+   "oldfieldtype": "Link"
+  },
+  {
+   "depends_on": "eval:doc.salary_mode == 'Bank'",
+   "fieldname": "bank_ac_no",
+   "fieldtype": "Data",
+   "label": "Bank A/C No.",
+   "oldfieldname": "bank_ac_no",
+   "oldfieldtype": "Data"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "health_insurance_section",
+   "fieldtype": "Section Break",
+   "label": "Insurance & Travel "
+  },
+  {
+   "fieldname": "health_insurance_provider",
+   "fieldtype": "Link",
+   "label": "Health Insurance Provider",
+   "options": "Employee Health Insurance"
+  },
+  {
+   "fieldname": "health_insurance_no",
+   "fieldtype": "Data",
+   "label": "Health Insurance No"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "contact_details",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "cell_number",
+   "fieldtype": "Data",
+   "label": "Personal Mobile",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "prefered_contact_email",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Prefered Contact Email",
+   "options": "\nCompany Email\nPersonal Email\nUser ID"
+  },
+  {
+   "fieldname": "prefered_email",
+   "fieldtype": "Data",
+   "label": "Prefered Email",
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "description": "Provide Email Address registered in company",
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Company Email",
+   "oldfieldname": "company_email",
+   "oldfieldtype": "Data",
+   "options": "Email"
+  },
+  {
+   "fieldname": "personal_email",
+   "fieldtype": "Data",
+   "label": "Personal Email",
+   "options": "Email"
+  },
+  {
+   "default": "0",
+   "fieldname": "unsubscribed",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Unsubscribed"
+  },
+  {
+   "fieldname": "column_break4",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "permanent_accommodation_type",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Permanent Address Is",
+   "options": "\nRented\nOwned"
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "current_accommodation_type",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Current Address Is",
+   "options": "\nRented\nOwned"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Small Text",
+   "label": "Current Address"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb53",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Personal Bio"
+  },
+  {
+   "description": "Short biography for website and other publications.",
+   "fieldname": "bio",
+   "fieldtype": "Text Editor",
+   "hidden": 1,
+   "label": "Bio / Cover Letter"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "personal_details",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport Number"
+  },
+  {
+   "fieldname": "date_of_issue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "valid_upto",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Valid Upto"
+  },
+  {
+   "fieldname": "place_of_issue",
+   "fieldtype": "Data",
+   "label": "Place of Issue"
+  },
+  {
+   "fieldname": "column_break6",
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "width": "50%"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nMarried\nSingle\nSeparated\nIn Relationship\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "\nA-\nB-\nO-\nB+\nO+\nA+\nA1+\nA1B-\nAB+\nAB-\nAB\nA1B+\nA2+\nA2B\nA2B+\nA1-"
+  },
+  {
+   "description": "Here you can maintain family details like name and occupation of parent, spouse and children",
+   "fieldname": "family_background",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Family Background"
+  },
+  {
+   "description": "Here you can maintain height, weight, allergies, medical concerns etc",
+   "fieldname": "health_details",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Health Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "educational_qualification",
+   "fieldtype": "Section Break",
+   "label": "Educational Qualification"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Table",
+   "label": "Education",
+   "options": "Employee Education"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "previous_work_experience",
+   "fieldtype": "Section Break",
+   "label": "Previous Work Experience",
+   "options": "Simple"
+  },
+  {
+   "fieldname": "external_work_history",
+   "fieldtype": "Table",
+   "label": "External Work History",
+   "options": "Employee External Work History"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "history_in_company",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "History In Company",
+   "options": "Simple"
+  },
+  {
+   "fieldname": "internal_work_history",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Internal Work History",
+   "options": "Employee Internal Work History"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "exit",
+   "fieldtype": "Section Break",
+   "label": "Exit",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "fieldname": "resignation_letter_date",
+   "fieldtype": "Date",
+   "label": "Resignation Date",
+   "oldfieldname": "resignation_letter_date",
+   "oldfieldtype": "Date"
+  },
+  {
+   "fieldname": "relieving_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Relieving Date",
+   "mandatory_depends_on": "eval:doc.status == \"Left\"",
+   "oldfieldname": "relieving_date",
+   "oldfieldtype": "Date"
+  },
+  {
+   "fieldname": "reason_for_leaving",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Reason for Leaving",
+   "oldfieldname": "reason_for_leaving",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "leave_encashed",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Leave Encashed?",
+   "oldfieldname": "leave_encashed",
+   "oldfieldtype": "Select",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.leave_encashed ==\"Yes\"",
+   "fieldname": "encashment_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Encashment Date",
+   "oldfieldname": "encashment_date",
+   "oldfieldtype": "Date"
+  },
+  {
+   "fieldname": "held_on",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Exit Interview Held On",
+   "oldfieldname": "held_on",
+   "oldfieldtype": "Date"
+  },
+  {
+   "fieldname": "new_workplace",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "New Workplace",
+   "oldfieldname": "new_workplace",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Feedback",
+   "oldfieldname": "feedback",
+   "oldfieldtype": "Text"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "lft",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "rgt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "ignore_user_permissions": 1,
+   "label": "Old Parent"
+  },
+  {
+   "fieldname": "attendance_device_id",
+   "fieldtype": "Data",
+   "label": "Attendance Device ID (Biometric/RF tag ID)",
+   "no_copy": 1,
+   "unique": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "attendance_and_leave_details",
+   "fieldtype": "Section Break",
+   "label": "Attendance and Leave Details"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_shift",
+   "fieldtype": "Link",
+   "label": "Applicable Shift",
+   "options": "Shift Type"
+  },
+  {
+   "fieldname": "leave_approver",
+   "fieldtype": "Link",
+   "label": "Leave",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "department.payroll_cost_center",
+   "fetch_if_empty": 1,
+   "fieldname": "payroll_cost_center",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Payroll Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expense_approver",
+   "fieldtype": "Link",
+   "label": "Expense",
+   "options": "User"
+  },
+  {
+   "fieldname": "approvers_section",
+   "fieldtype": "Section Break",
+   "label": "Approvers"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shift_request_approver",
+   "fieldtype": "Link",
+   "label": "Appraisal",
+   "options": "User"
+  },
+  {
+   "fieldname": "new_conformation_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "New Conformation Date"
+  },
+  {
+   "fieldname": "conformed_date",
+   "fieldtype": "Date",
+   "label": "Confirmed Date"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "office_mobile",
+   "fieldtype": "Data",
+   "label": "Office Mobile",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "revised_confirmation_date",
+   "fieldtype": "Date",
+   "label": "Revised Confirmation Date"
+  },
+  {
+   "fieldname": "it_asset_number",
+   "fieldtype": "Data",
+   "label": "IT Asset Number"
+  },
+  {
+   "fieldname": "office_email",
+   "fieldtype": "Data",
+   "label": "Office Email"
+  },
+  {
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "PAN Number"
+  },
+  {
+   "fieldname": "uan_number",
+   "fieldtype": "Data",
+   "label": "UAN Number"
+  },
+  {
+   "fieldname": "esci_number",
+   "fieldtype": "Data",
+   "label": "ESCI Number"
+  },
+  {
+   "fieldname": "health_insurer",
+   "fieldtype": "Data",
+   "label": "Health Insurer"
+  },
+  {
+   "fieldname": "from_mmyy",
+   "fieldtype": "Date",
+   "label": "From MM/YY"
+  },
+  {
+   "fieldname": "travel_insurer",
+   "fieldtype": "Data",
+   "label": "Travel Insurer"
+  },
+  {
+   "fieldname": "from_mm_yy",
+   "fieldtype": "Date",
+   "label": "From MM/YY"
+  },
+  {
+   "fieldname": "column_break_76",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_mmyy",
+   "fieldtype": "Date",
+   "label": "To MM/YY"
+  },
+  {
+   "fieldname": "valid_upto_mm_yy",
+   "fieldtype": "Date",
+   "label": "Valid upto MM YY"
+  },
+  {
+   "fieldname": "travel_insurance_number",
+   "fieldtype": "Data",
+   "label": "Travel Insurance Number"
+  },
+  {
+   "fieldname": "to_yy",
+   "fieldtype": "Data",
+   "label": "To MM/YY"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Data",
+   "label": "Height"
+  },
+  {
+   "fieldname": "aadhar_number",
+   "fieldtype": "Data",
+   "label": "Aadhar Number"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "medical_conditions",
+   "fieldtype": "Small Text",
+   "label": "Medical Conditions"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Select",
+   "label": "Relationship",
+   "options": "\nFather\nMother\nSpouse\nChild\nBrother\nSister\nFather in law\nMother in law\nGuardian\nOthers"
+  },
+  {
+   "fieldname": "landline",
+   "fieldtype": "Data",
+   "label": "Landline"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "family_details_section",
+   "fieldtype": "Section Break",
+   "label": "Family Details"
+  },
+  {
+   "fieldname": "family_det",
+   "fieldtype": "Table",
+   "label": "Family Details",
+   "options": "Family Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sailing_experience_sec_section",
+   "fieldtype": "Section Break",
+   "label": "Sailing Experience"
+  },
+  {
+   "fieldname": "sailing_experience",
+   "fieldtype": "Table",
+   "label": "Sailing Experience",
+   "options": "SailingExperience"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "career_history_section",
+   "fieldtype": "Section Break",
+   "label": "Career History"
+  },
+  {
+   "fieldname": "career_his",
+   "fieldtype": "Table",
+   "label": "Career History",
+   "options": "Career Movement"
+  },
+  {
+   "fieldname": "last_working_day",
+   "fieldtype": "Date",
+   "label": "Last Working Date"
+  },
+  {
+   "fieldname": "notice_period_served",
+   "fieldtype": "Select",
+   "label": "Notice Period Served ",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "eligible_to_rehire",
+   "fieldtype": "Select",
+   "label": "Eligible to Rehire",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_128",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "acceptance_date",
+   "fieldtype": "Date",
+   "label": "Acceptance Date"
+  },
+  {
+   "fieldname": "exit_status",
+   "fieldtype": "Select",
+   "label": "Exit Status",
+   "options": "\nVoluntary Separation\nInvoluntary Separation"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Comment"
+  },
+  {
+   "depends_on": "eval:doc.exit_status == \"Voluntary Separation\"",
+   "fieldname": "reason_for_voluntary_separation",
+   "fieldtype": "Select",
+   "label": "Reason For Voluntary Separation",
+   "options": "\nCareer growth\nCareer shift\nMarriage\nFamily Relocation\nMedical reasons\nHigher studies\nMaternity reasons\nFamily issues\nCompensation\nSelf-employment\nFamily business\nRetirement\nCompany shifting location\nTransfer to other location\nWork shift timings\nDistance to workplace\nCompany benefits\nWorkplace harassment\nLack of growth opportunities\nUnsure of company\u2019s future\nIncompetent manager\nWorkplace environment\nWorkplace politics\nOther"
+  },
+  {
+   "depends_on": "eval:doc.exit_status == 'Involuntary Separation'",
+   "fieldname": "reason_for_involuntary_separation",
+   "fieldtype": "Select",
+   "label": "Reason For Involuntary Separation",
+   "options": "\nAbsconding\nAbsenteeism\nPerformance issues\nRetrenchment\nOrganisation re-structuring\nMerger & Acquisition\nTermination\nOther"
+  },
+  {
+   "depends_on": "eval:(doc.exit_status == 'Voluntary Separation' && doc.reason_for_voluntary_separation == 'Other')",
+   "fieldname": "other",
+   "fieldtype": "Data",
+   "label": "Other"
+  },
+  {
+   "depends_on": "eval:(doc.exit_status == 'Involuntary Separation' && doc.reason_for_involuntary_separation == 'Other')",
+   "fieldname": "othr",
+   "fieldtype": "Data",
+   "label": "Other"
+  }
+ ],
+ "icon": "fa fa-user",
+ "idx": 24,
+ "image_field": "image",
+ "links": [],
+ "modified": "2021-07-17 15:16:47.751824",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "employee_name",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name"
+}

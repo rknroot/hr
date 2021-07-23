@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "creation": "2021-06-19 11:54:46.427874",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "consider_leave_on",
+  "section_break_2",
+  "personal_leave",
+  "maternity_leave",
+  "column_break_5",
+  "max_leave_days",
+  "additional_leave",
+  "maximum_continuous_days",
+  "section_break_8",
+  "restrict_backdated_leave_application",
+  "payroll_cut_off_date",
+  "attendance_payroll_cutoff",
+  "column_break_10",
+  "backdated_limit",
+  "np_leave",
+  "future_days_at_req"
+ ],
+ "fields": [
+  {
+   "fieldname": "consider_leave_on",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Consider Leave On",
+   "options": "\nWorking Days\nNon-working Days"
+  },
+  {
+   "default": "0",
+   "fieldname": "restrict_backdated_leave_application",
+   "fieldtype": "Check",
+   "label": "Restrict Backdated Leave Application"
+  },
+  {
+   "description": "<p style=\"color: red;\">Mention Maternity Leave in days. (For Ex.84)</p>",
+   "fieldname": "maternity_leave",
+   "fieldtype": "Int",
+   "label": "Maternity Leave",
+   "non_negative": 1
+  },
+  {
+   "description": "<p style=\"color: red;\">Mention No of Maximum Leave days should employee take. (For Ex. 48)</p>",
+   "fieldname": "max_leave_days",
+   "fieldtype": "Int",
+   "label": "Maximum Leave Days",
+   "non_negative": 1
+  },
+  {
+   "description": "<p style=\"color: red;\">Mention No of Days for Personal Leave Per Month. (For Ex. 2)</p>",
+   "fieldname": "personal_leave",
+   "fieldtype": "Int",
+   "label": "Personal Leave Per Month",
+   "non_negative": 1
+  },
+  {
+   "description": "<p style=\"color: red;\">Mention No of Additional Leaves given for an employee. (For Ex: 1 day at every month of completion)</p>",
+   "fieldname": "additional_leave",
+   "fieldtype": "Int",
+   "label": "Additional Leave"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maximum_continuous_days",
+   "fieldtype": "Int",
+   "label": "Maximum Continuous Days For Leave Application"
+  },
+  {
+   "description": "<p style=\"color: red;\">Mention Payroll Cutoff in days(For Ex. 15)</p>",
+   "fieldname": "payroll_cut_off_date",
+   "fieldtype": "Data",
+   "label": "Payroll Cut Off For Leave"
+  },
+  {
+   "fieldname": "np_leave",
+   "fieldtype": "Data",
+   "label": "Notice Period Leave Days"
+  },
+  {
+   "description": "<p style=\"color: red;\">Mention Payroll Cutoff in  days for attendance. (For Ex.15 )</p>",
+   "fieldname": "attendance_payroll_cutoff",
+   "fieldtype": "Data",
+   "label": "Payroll Cut Off For Attendance"
+  },
+  {
+   "description": "<p style=\"color: red;\">In Days(For Ex. 30)</p>",
+   "fieldname": "future_days_at_req",
+   "fieldtype": "Int",
+   "label": "Future Days For Attendance Request"
+  },
+  {
+   "fieldname": "backdated_limit",
+   "fieldtype": "Int",
+   "label": "Backdated Limit In Days"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-07-13 12:21:04.954207",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Leave Management Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,238 @@
+{
+ "actions": [],
+ "creation": "2021-06-12 16:21:25.933364",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "total_sailing_experience",
+  "total_maritime_experience",
+  "sailing_experience",
+  "experience_in_year",
+  "vessel_type_sailed",
+  "experience_in_month",
+  "master_exp",
+  "captain_exp",
+  "chief_officer_exp",
+  "chief_engineer_exp",
+  "first_engineer_exp",
+  "additional_master_exp",
+  "additional_chief_exp",
+  "second_engineer_exp",
+  "second_officer_exp",
+  "master_exp_year",
+  "captain_exp_year",
+  "chief_officer_exp_year",
+  "chief_engineer_exp_year",
+  "first_engineer_exp_year",
+  "additional_master_exp_year",
+  "additional_chief_exp_year",
+  "second_engineer_exp_year",
+  "second_officer_exp_year",
+  "shore_experience",
+  "cdc_number",
+  "column_break_7",
+  "non_superintendent_in_years",
+  "experience_in_vessel_type",
+  "last_sailed"
+ ],
+ "fields": [
+  {
+   "fieldname": "total_sailing_experience",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Total Sailing experience",
+   "options": "\nMonths\nYears",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sailing_experience",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Rank",
+   "options": "\nMaster\nCaptain\nChief Officer\nChief Engineer\nFirst Engineer\nAdditional Master\nAdditional Chief Engineer\nSecond Engineer\nSecond Officer",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.total_sailing_experience == \"Years\"",
+   "fieldname": "experience_in_year",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Experience in Year",
+   "non_negative": 1
+  },
+  {
+   "depends_on": "eval:doc.total_sailing_experience == \"Months\"",
+   "fieldname": "experience_in_month",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Experience in Month",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "last_sailed",
+   "fieldtype": "Data",
+   "label": "Last Sailed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vessel_type_sailed",
+   "fieldtype": "Data",
+   "label": "Vessel Type Sailed ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "experience_in_vessel_type",
+   "fieldtype": "Data",
+   "label": "Experience in vessel type ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shore_experience",
+   "fieldtype": "Data",
+   "label": "Shore Experience As Superintendent In Years",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_maritime_experience",
+   "fieldtype": "Data",
+   "label": "Total maritime experience ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cdc_number",
+   "fieldtype": "Data",
+   "label": "CDC number ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "non_superintendent_in_years",
+   "fieldtype": "Data",
+   "label": "Shore Experience As non Superintendent In Years"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Captain\" && doc.total_sailing_experience == \"Months\"",
+   "fieldname": "captain_exp",
+   "fieldtype": "Data",
+   "label": "Captain Sailing Experience in Months"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"First Engineer\" && doc.total_sailing_experience == \"Months\"",
+   "fieldname": "first_engineer_exp",
+   "fieldtype": "Data",
+   "label": "First Engineer Sailing Experience In Months"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Additional Master\" && doc.total_sailing_experience == \"Months\"",
+   "fieldname": "additional_master_exp",
+   "fieldtype": "Data",
+   "label": "Additional Master Sailing Experience In Months"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Second Engineer\" && doc.total_sailing_experience == \"Months\"",
+   "fieldname": "second_engineer_exp",
+   "fieldtype": "Data",
+   "label": "Second Engineer Sailing Experience In Months"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Second Officer\" && doc.total_sailing_experience == \"Months\"",
+   "fieldname": "second_officer_exp",
+   "fieldtype": "Data",
+   "label": "Second Officer Sailing Experience In Months"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Master\" && doc.total_sailing_experience == \"Months\"",
+   "fieldname": "master_exp",
+   "fieldtype": "Data",
+   "label": "Master Sailing Experience In Months"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Master\" && doc.total_sailing_experience == \"Years\"",
+   "fieldname": "master_exp_year",
+   "fieldtype": "Data",
+   "label": "Master Sailing Experience In Years"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Captain\" && doc.total_sailing_experience == \"Years\"",
+   "fieldname": "captain_exp_year",
+   "fieldtype": "Data",
+   "label": "Captain Sailing Experience in Years"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"First Engineer\" && doc.total_sailing_experience == \"Years\"",
+   "fieldname": "first_engineer_exp_year",
+   "fieldtype": "Data",
+   "label": "First Engineer Sailing Experience In Years"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Additional Master\" && doc.total_sailing_experience == \"Years\"",
+   "fieldname": "additional_master_exp_year",
+   "fieldtype": "Data",
+   "label": "Additional Master Sailing Experience In Years"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Second Engineer\" && doc.total_sailing_experience == \"Years\"",
+   "fieldname": "second_engineer_exp_year",
+   "fieldtype": "Data",
+   "label": "Second Engineer Sailing Experience In Years"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Second Officer\" && doc.total_sailing_experience == \"Years\"",
+   "fieldname": "second_officer_exp_year",
+   "fieldtype": "Data",
+   "label": "Second Officer Sailing Experience In Years"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Chief Officer\" && doc.total_sailing_experience == \"Months\"",
+   "fieldname": "chief_officer_exp",
+   "fieldtype": "Data",
+   "label": "Chief Officer Sailing Experience In Months"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Chief Engineer\" && doc.total_sailing_experience == \"Months\"",
+   "fieldname": "chief_engineer_exp",
+   "fieldtype": "Data",
+   "label": "Chief Engineer Sailing Experience In Months"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Additional chief Engineer\" && doc.total_sailing_experience == \"Months\"",
+   "fieldname": "additional_chief_exp",
+   "fieldtype": "Data",
+   "label": "Additional chief Enginner Sailing Experience In Months"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Chief Officer\" && doc.total_sailing_experience == \"Years\"",
+   "fieldname": "chief_officer_exp_year",
+   "fieldtype": "Data",
+   "label": "Chief Officer Sailing Experience In Years"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Chief Engineer\" && doc.total_sailing_experience == \"Years\"",
+   "fieldname": "chief_engineer_exp_year",
+   "fieldtype": "Data",
+   "label": "Chief Engineer Sailing Experience In Years"
+  },
+  {
+   "depends_on": "eval:doc.sailing_experience == \"Additional chief Engineer\" && doc.total_sailing_experience == \"Years\"",
+   "fieldname": "additional_chief_exp_year",
+   "fieldtype": "Data",
+   "label": "Additional chief Enginner Sailing Experience In Years"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-14 23:44:27.298619",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "SailingExperience",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

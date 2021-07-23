@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "creation": "2021-06-11 18:08:28.745317",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "designation",
+  "department",
+  "from_mmyy",
+  "branch_location",
+  "column_break_2",
+  "to_mmyy",
+  "reporting_manager"
+ ],
+ "fields": [
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department "
+  },
+  {
+   "fieldname": "from_mmyy",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From MM/YY"
+  },
+  {
+   "fieldname": "to_mmyy",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To MM/YY"
+  },
+  {
+   "fieldname": "reporting_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reporting Manager ",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch_location",
+   "fieldtype": "Data",
+   "label": "Branch/Location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-14 23:41:23.495611",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Career Movement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
